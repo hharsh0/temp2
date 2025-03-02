@@ -28,7 +28,7 @@ import com.utils.R;
 /**
  * 登录相关
  */
-//@RequestMapping("liulangdongwubeihua")
+@RequestMapping("/users")
 @RestController
 public class UsersController {
 	
@@ -51,7 +51,7 @@ public class UsersController {
 		String token = tokenService.generateToken(user.getId(),username, "users", user.getRole());
 		R r = R.ok();
 		r.put("token", token);
-//		r.put("role",user.getRole());
+		r.put("role",user.getRole());
 		r.put("userId",user.getId());
 		return r;
 	}
