@@ -332,6 +332,7 @@ public class ZiyuanzheController {
         if(ziyuanzheEntity != null)
             return R.error("账户或者手机号已经被使用");
         ziyuanzhe.setZiyuanzheDelete(1);
+        System.out.println("reached");
         ziyuanzhe.setCreateTime(new Date());
         ziyuanzheService.insert(ziyuanzhe);
         return R.ok();

@@ -61,7 +61,7 @@ var indexNav = [
 
 ]
 
-var adminurl =  "http://localhost:8080/liulangdongwubeihua/admin/dist/index.html#/login";
+var adminurl =  `${window.location.origin}/liulangdongwubeihua/admin/dist/index.html#/login`;
 
 
 
