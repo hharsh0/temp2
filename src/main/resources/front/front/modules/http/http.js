@@ -5,7 +5,7 @@ layui.define(['jquery', 'layer'], function(exports) { //提示：模块也可以
 		layer = layui.layer,
 		        baseurl = `${window.location.origin}/liulangdongwubeihua/`;
         	var http = {
-		        domain : "https://zbairyli27.duckdns.org/liulangdongwubeihua/",
+		        domain : "http://localhost:8080/liulangdongwubeihua/",
         		baseurl: baseurl,
 		/**
 		 * 获取传递参数值(修改支持中文)
