@@ -15,12 +15,12 @@ services:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 
   app:
-    build: ../../../Downloads
+    build: .
     container_name: stray-pet-app
-    depends_on:
-      - mysql
     ports:
       - "8080:8080"
+    depends_on:
+      - mysql
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/t273?useUnicode=true&characterEncoding=utf-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
       SPRING_DATASOURCE_USERNAME: root
